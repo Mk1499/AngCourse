@@ -16,6 +16,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
 import { AdminOrdersComponent } from './components/admin/admin-orders/admin-orders.component';
 import { AdminProductsComponent } from './components/admin/admin-products/admin-products.component';
+import { GraphQLModule } from './graphql.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AdminProductsComponent } from './components/admin/admin-products/admin-
     FormsModule,
     CustomFormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]

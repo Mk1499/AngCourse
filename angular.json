@@ -124,6 +124,14 @@
               "devServerTarget": "itshareApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://mk1499.github.io/AngCourse/",
+            "name": "MK1499",
+            "email": "m.khaled1499@gmail.com"
+          }
         }
       }
     }

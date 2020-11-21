@@ -10,14 +10,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RemoteComponent implements OnInit {
 
   constructor(private service: PostService) { }
-  posts: object[] = [];
+  posts:any = [];
   input = '';
 
   ngOnInit(): void {
     this.service.getPosts().subscribe(res => {
       console.log('RES : ', res);
       this.posts = res;
-
     });
   }
 
